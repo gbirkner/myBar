@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="97db729e163541059606a027329b5426" Name="Diagram1" ZoomLevel="66">
+        <EntityTypeShape EntityType="myBarModel.AspNetRole" Width="1.5" PointX="0.5" PointY="4.625" IsExpanded="false" />
+        <EntityTypeShape EntityType="myBarModel.AspNetUserClaim" Width="1.5" PointX="0.5" PointY="3.375" IsExpanded="false" />
+        <EntityTypeShape EntityType="myBarModel.AspNetUserLogin" Width="1.5" PointX="0.5" PointY="4" IsExpanded="false" />
+        <EntityTypeShape EntityType="myBarModel.AspNetUser" Width="1.5" PointX="2.375" PointY="4" IsExpanded="false" />
+        <EntityTypeShape EntityType="myBarModel.InvoicePos" Width="1.5" PointX="9.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.Invoice" Width="1.5" PointX="11.875" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.Order" Width="1.5" PointX="5.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.OrderState" Width="1.5" PointX="7" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.Place" Width="1.5" PointX="9.625" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.Product" Width="1.5" PointX="7.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.ProductServing" Width="1.5" PointX="9.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.ProductState" Width="1.5" PointX="4.875" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.ProductType" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.Stock" Width="1.5" PointX="14.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="myBarModel.Unit" Width="1.5" PointX="11.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="myBarModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_InvoicePosCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_InvoicePosModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_InvoicesCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_InvoicesModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrderStatesCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrderStatesModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_PlacesCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_PlacesModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductsCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductServingsCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductServingsModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductsModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductStatesCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductStatesModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductTypesCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductTypesModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_StocksCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_StocksModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_UnitsCreatedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_UnitsModifiedBy" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersInvoicePosID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersOrderStateID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersPlaceID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_OrdersUnitID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductServingsProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductsProductStateID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductsProductTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductsStockUnitID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_StocksProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.fk_ProductServingsUnitID" ManuallyRouted="false" />
+        <AssociationConnector Association="myBarModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
