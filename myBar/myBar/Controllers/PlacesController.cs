@@ -34,6 +34,7 @@ namespace myBar.Controllers
         }
 
         // GET: Places/Create
+        [Authorize( Roles = "Administrator, Backoffice" )]
         public ActionResult Create() {
             ViewBag.CreatedBy = new SelectList(db.AspNetUsers, "Id", "Email");
             ViewBag.ModifiedBy = new SelectList(db.AspNetUsers, "Id", "Email");
@@ -45,6 +46,7 @@ namespace myBar.Controllers
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize( Roles = "Administrator, Backoffice" )]
         public ActionResult Create([Bind(Include = "PlaceID,Title,Description,Capacity,smoking")] Place place)
         {
             place.CreatedBy = User.Identity.GetUserId();
@@ -64,6 +66,7 @@ namespace myBar.Controllers
         }
 
         // GET: Places/Edit/5
+        [Authorize( Roles = "Administrator, Backoffice" )]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -85,6 +88,7 @@ namespace myBar.Controllers
         // finden Sie unter http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize( Roles = "Administrator, Backoffice" )]
         public ActionResult Edit([Bind(Include = "PlaceID,Title,Description,Capacity,smoking,CreatedBy,CreatedDate,ModifiedBy,ModifiedDate")] Place place)
         {
             place.ModifiedBy = User.Identity.GetUserId();
@@ -101,6 +105,7 @@ namespace myBar.Controllers
         }
 
         // GET: Places/Delete/5
+        [Authorize(Roles = "Administrator, Backoffice")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -118,6 +123,7 @@ namespace myBar.Controllers
         // POST: Places/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize( Roles = "Administrator, Backoffice" )]
         public ActionResult DeleteConfirmed(int id)
         {
             Place place = db.Places.Find(id);

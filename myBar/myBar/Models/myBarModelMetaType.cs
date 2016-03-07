@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 namespace myBar.Models {
 
     [MetadataType(typeof(PlacesMetaData))]
-    public partial class Places {
+    public partial class Place {
     }
 
 
